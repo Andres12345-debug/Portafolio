@@ -1,0 +1,451 @@
+#**********************************#
+1. Crear proyecto
+ng new repaso_navegacion --standalone=false
+
+ng new jampCreativePage --standalone=false
+
+ng new fon_exito --standalone=false
+
+
+ng new repaso_servicios --standalone=false
+
+
+ng new Portafolio --standalone=false
+
+
+#**********************************#
+2. Instalacion librerias
+npm i bootstrap
+npm install @fortawesome/fontawesome-free
+npm i ngx-bootstrap
+npm i ngx-toastr
+npm install ngx-pagination --save
+npm install bootstrap bootstrap-icons aos
+npm install aos --save
+npm i ngx
+
+
+
+
+
+
+
+**********************
+#**********************************#
+3. Incluir los archivos css y js en angular.json
+
+          "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "./node_modules/aos/dist/aos.css"
+
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+
+            ],
+            
+                     
+#**********************************#
+Cambiar tsconfig.json a 
+    "moduleResolution": "Node",
+
+#**********************************#
+5. Limpiar la plantilla del componente principal (app.component.html)
+#**********************************#
+6. Crear componentes
+#**********************************#
+  ng g c components/contenedor/cabecera --skip-tests
+  ng g c components/contenedor/inicio --skip-tests
+  ng g c components/contenedor/error --skip-tests
+  ng g c components/contenedor/contacto --skip-tests
+  ng g c components/contenedor/acerca-de --skip-tests
+  ng g c components/contenedor/footer --skip-tests
+
+
+
+
+#**********************************#
+Componentes del modelo
+#**********************************#
+5. Limpiar la plantilla del componente principal (app.component.html)
+#**********************************#
+6. Crear componentes de modelo
+#**********************************#
+ng g c components/casa/listarCasa --skip-tests
+ng g c components/casa/crearCasa --skip-tests
+ng g c components/casa/administrarCasa --skip-tests
+ng g c components/casa/actualizarCasa --skip-tests
+
+
+
+
+      TALLER SERVICIOS
+
+      app MODULE
+
+      import {BsModalService, ModalModule} from "ngx-bootstrap/modal";
+      import {ToastrModule} from "ngx-toastr";
+      import { FormsModule } from '@angular/forms';
+      import { NgxPaginationModule } from 'ngx-pagination';
+
+
+      ModalModule,
+      ToastrModule.forRoot(),
+      FormsModule,
+      NgxPaginationModule
+
+
+
+      ng g class models/Ciudad --skip-tests   
+      ng g class models/Ciudad --skip-tests
+      ng g class models/Region --skip-tests
+
+
+
+      ng g c components/colombia/departamento --skip-tests
+      ng g c components/colombia/detalle --skip-tests
+      ng g c components/colombia/regiones --skip-tests
+      
+          14.generacion domino 
+
+      ******************************************
+      ng g enum utilities/dominos/urls 
+      ***************************************************
+      15.creacion de los servico
+      ng g s servicios/api/colombia --skip-tests
+
+      OBSERVADORES
+      ng g enum utilities/observadores/tipoAny 
+
+      Spinner
+      ng g c utilities/plantilla/spiner --skip-tests
+
+            
+      #**********************************#
+      ng g c components/contenedor/cabecera --skip-tests
+      ng g c components/contenedor/inicio --skip-tests
+      ng g c components/contenedor/error --skip-tests
+      ng g c components/contenedor/contacto --skip-tests
+      ng g c components/contenedor/acerca-de --skip-tests
+
+
+
+    1.INICIAMOS POR LOS URLS
+
+
+    2.PASAMOS A COLOMBIA.SERVICE
+
+
+    3.PASAMOS A LOS MODELOS QUE SON LOS QUE NOS TRAEN LAS Variables
+
+    4.PASAMOS A LOS OBSERVABLE
+    
+
+
+
+
+
+
+
+
+
+
+
+*********************************************
+8. Contenido plantilla componente cabecera (cabecera, component)
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <!--ACA VA MI IMAGEN-->
+
+      <!---YEISON MULA-------->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca De</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Operaciones
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Listar</a></li>
+            <li><a class="dropdown-item" href="#">Registrar </a></li>
+            </ul>
+        </li>
+        </ul>
+        <div class="navbar-nav">
+          <span class="nav-item">
+            <a href="#" class="nav-link">Inicio Sesion</a>
+          </span>
+        </div>      
+    </div>
+  </div>
+</nav>
+#**********************************#
+8. Agregar selector de cabecera en el componente principaal(app.component.html)
+<main><app-cabecera></app-cabecera></main>
+#**********************************#
+
+
+MODELS 
+ng g class models/casa --skip-tests         
+
+ng g class models/finca --skip-tests         
+
+
+#**********************************#
+
+MOKS
+ng g enum mocks/fincaMock  
+
+
+ng g enum mocks/casaMock  
+#**********************************#
+
+INICIAMOS POR LAS RUTAS
+
+#**********************************#
+
+VA ESTA MONDA EN EL APP.MODULE
+
+import { ToastrModule } from 'ngx-toastr';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { FormsModule } from '@angular/forms';
+import {esDoLocale} from 'ngx-bootstrap/locale';
+import {defineLocale} from 'ngx-bootstrap/chronos'
+
+  BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    ModalModule,
+    FormsModule
+#**********************************#
+
+12.contemido plantillaaa inicio
+****************************************
+13. creacion de modelo
+******************************************
+ng g class models/Pais --skip-tests
+ng g class models/Region --skip-tests
+ng g class models/Departamento --skip-tests
+ng g class models/Ciudad --skip-tests
+ng g class models/Ciudad --skip-tests
+
+
+14.generacion domino 
+******************************************
+ng g enum utilities/dominos/urls 
+***************************************************
+15.creacion de los servico
+ng g s servicios/api/colombia --skip-tests
+
+#**********************************#
+
+CREACION MODULO CONTENEDOR Y Componentes
+ng g m modulos/lan/contenedor
+ng g c modulos/lan/contenedor/cuerpoLand --skip-tests
+ng g c modulos/lan/contenedor/cabeceraLand --skip-tests
+
+
+ng g c modulos/contenedor/dash/cuerpoDash --skip-tests
+ng g c modulos/contenedor/dash/cabecera --skip-tests
+ng g c modulos/contenedor/dash/barraLateralDash --skip-tests
+ng g c modulos/contenedor/dash/pieDash --skip-tests
+
+
+#**********************************#
+Creacion modulo privado y componentes
+
+ng g m modulos/privado/control 
+ng g m modulos/privado/control/control-routing --flat --module=control
+
+ng g m modulos/privado/control/errorInterno --skip-tests
+ng g m modulos/privado/control/bienvenida --skip-tests
+
+ng g m modulos/privado/departamento 
+ng g m modulos/privado/departamento/departamento-routing --flat --module=departamento
+
+ng g m modulos/privado/departamento/crearDepartamento --skip-tests
+ng g m modulos/privado/departamento/administrarDepartamento --skip-tests
+ng g m modulos/privado/departamento/actualizarDepartamento --skip-tests
+ng g m modulos/privado/departamento/listarDepartamento --skip-tests
+
+
+
+
+
+
+#**********************************#
+
+Para desplegar 
+
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "jampCreativePage": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/jamp-creative-page",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "./node_modules/aos/dist/aos.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "1.5mb",
+                  "maximumError": "2MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "jampCreativePage:build:production"
+            },
+            "development": {
+              "buildTarget": "jampCreativePage:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css",
+              "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "39400407-785a-4e03-9ab2-bfa4e91fc1d2"
+  }
+}
+
+#**********************************#
+  PARA USAR EL ng serve toca cambiar  de esto:
+Este es para el despliegue
+"builder": "@angular-devkit/build-angular:browser"
+              "main": "src/main.ts",
+a esto:
+
+"builder": "@angular-devkit/build-angular:application",
+
+            "browser": "src/main.ts",
+ 
+#***************CRERAR SERVICIOS*******************#
+14.generacion domino 
+******************************************
+ng g enum utilities/dominos/urls 
+***************************************************
+15.creacion de los servico
+ng g s servicios/api/openai --skip-tests
+ng g s servicios/api/noticias --skip-tests
+
+########Lanzar#########
+ng serve
