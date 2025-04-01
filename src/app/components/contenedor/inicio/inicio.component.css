@@ -1,0 +1,17 @@
+.estrellas {
+    background-image: url('../../../../assets/background/estrellasOscuro.svg');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .redondoFoto{
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43), 0 10px 10px rgba(152, 143, 143, 0.786);
+    background-color: #0000002c;
+
+}
+    .redondoFoto:hover{
+        box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43), 0 10px 10px rgba(152, 143, 143, 0.786);
+        background-color: #0000002c;
+        transform: scale(1.05);
+        transition: all .3s ease-in-out;
+    }

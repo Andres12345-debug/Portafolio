@@ -246,6 +246,24 @@ import {defineLocale} from 'ngx-bootstrap/chronos'
     ModalModule,
     FormsModule
 #**********************************#
+ROUTER MODULE
+
+        const routes: Routes = [
+      {path: 'inicio', component: InicioComponent},
+
+          /* RUTAS OBLIGATORIAS*/
+          {path: '', redirectTo: 'inicio', pathMatch: 'full' },
+          {path: '**', component: ErrorComponent}
+
+
+    ];
+
+    @NgModule({
+      imports: [RouterModule.forRoot(routes)],
+      exports: [RouterModule]
+    })
+
+
 
 12.contemido plantillaaa inicio
 ****************************************
