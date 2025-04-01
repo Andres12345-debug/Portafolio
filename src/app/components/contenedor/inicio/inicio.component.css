@@ -1,17 +1,49 @@
 .estrellas {
-    background-image: url('../../../../assets/background/estrellasOscuro.svg');
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-  .redondoFoto{
-    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43), 0 10px 10px rgba(152, 143, 143, 0.786);
-    background-color: #0000002c;
-
+  background-image: url("../../../../assets/background/fondoColorido.svg");
+  background-attachment: fixed;
+  background-size: cover;
 }
-    .redondoFoto:hover{
-        box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43), 0 10px 10px rgba(152, 143, 143, 0.786);
-        background-color: #0000002c;
-        transform: scale(1.05);
-        transition: all .3s ease-in-out;
-    }
+
+.redondoFoto {
+  box-shadow: 0 10px 10px rgba(106, 39, 221, 0.43),
+    0 10px 10px rgba(17, 16, 16, 0.786);
+  background-color: #0000002c;
+  
+}
+.redondoFoto:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43),
+    0 10px 10px rgba(152, 143, 143, 0.786);
+  background-color: #0000002c;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.textosDescripciones {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+}
+.titulos {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
+  text-align: center;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 20px;
+  margin-left: 5px;
+  animation: blink-caret 0.75s step-end infinite;
+}
+/* Animación del parpadeo del cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
