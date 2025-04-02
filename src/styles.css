@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.textosDescripciones {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+}
+.titulos {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
+  text-align: center;
+}
+.textosNegrllas{
+    font-weight: bold;
+    font-family: "Fira Code", "Consolas", "Courier New", monospace;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
+
+}

@@ -5,8 +5,8 @@
 }
 
 .redondoFoto {
-  box-shadow: 0 10px 10px rgba(106, 39, 221, 0.43),
-    0 10px 10px rgba(17, 16, 16, 0.786);
+  box-shadow: 0 10px 10px rgba(76, 35, 147, 0.43),
+    0 10px 10px rgba(124, 124, 124, 0.786);
   background-color: #0000002c;
   
 }
@@ -14,21 +14,11 @@
   cursor: pointer;
   box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43),
     0 10px 10px rgba(152, 143, 143, 0.786);
-  background-color: #0000002c;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
-.textosDescripciones {
-  font-family: "Fira Code", "Consolas", "Courier New", monospace;
-}
-.titulos {
-  font-family: "Fira Code", "Consolas", "Courier New", monospace;
-  font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
-  text-align: center;
-}
+
 
 .cursor {
   display: inline-block;
