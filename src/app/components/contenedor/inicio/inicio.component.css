@@ -41,3 +41,35 @@
     opacity: 0;
   }
 }
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+  .primary-image, .secondary-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .secondary-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  &:hover {
+    .primary-image {
+      opacity: 0;
+    }
+    
+    .secondary-image {
+      opacity: 1;
+    }
+  }
+}

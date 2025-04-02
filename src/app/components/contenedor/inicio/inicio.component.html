@@ -1,13 +1,15 @@
 <div class="estrellas">
-  <div class="container py-3">
+  <div class="container py-3s"  [@fadeInAnimation]>
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-md-10 mx-auto col-lg-2 text-center text-lg-start">
         <img
-          src="../../../../assets/img/julianMontanez.png"
+          src="{{defaultImage}}"
           width="270"
           height="270"
           class="bd-placeholder-img rounded-circle redondoFoto"
+          loading="lazy"
         />
+        
       </div>
       <div class="mt-5 col-lg-8 text-lg-start text-white">
         <h1 class="display-6 fw-bold lh-1 mb-3 titulos">
@@ -25,17 +27,17 @@
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <a
             href="https://www.linkedin.com/in/julian-andres-monta%C3%B1ez-02985813b/"
-            class="fs-3 me-3 nav-item bi bi-linkedin text-white"
+            class="fs-3 me-3 nav-item bi bi-linkedin text-white imagenesUi"
           ></a>
           <a
             href="https://github.com/Andres12345-debug"
-            class="fs-3 me-3 nav-item bi bi-github text-white"
+            class="fs-3 me-3 nav-item bi bi-github text-white imagenesUi"
           ></a>
           <a
             href="https://www.instagram.com/anddreeees/?hl=es-la"
-            class="fs-3 me-3 nav-item bi bi-instagram text-white"
+            class="fs-3 me-3 nav-item bi bi-instagram text-white imagenesUi"
           ></a>
-          <a href="#" class="fs-3 me-3 nav-item bi bi-whatsapp text-white"></a>
+          <a href="#" class="fs-3 me-3 nav-item bi bi-whatsapp text-white imagenesUi"></a>
         </ul>        
       </div>
     </div>
@@ -48,7 +50,7 @@
           HABILIDADES<br>
            UI/UX
         </h1>
-        <div class="row border-bottom">
+        <div class="row border-bottom mt-5">
           <div class="col-6 col-col-6 col-md-4 col-6 col-md-4 col-lg-4 text-center">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="imagenesUi" alt="HTML5" width="100" height="90">
             <h2 class="fs-3 textosDescripciones">HTML</h2>
@@ -76,7 +78,7 @@
           HABILIDADES<br>
            DEV
         </h1>
-        <div class="row border-bottom">
+        <div class="row border-bottom mt-5">
           <div class="col-6 col-md-4 col-lg-4 text-center">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="imagenesUi" alt="HTML5" width="100" height="90">
             <h2 class="fs-3 textosDescripciones">NODE.JS</h2>
@@ -97,6 +99,17 @@
         </div>
       </div>
     </div>
+  </div>  
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image-container">
+          <img class="primary-image" src="{{defaultImage}}" alt="Imagen predeterminada">
+          <img class="secondary-image" src="{{hoverImage}}" alt="Imagen al pasar el cursor">
+        </div>
+      </div>
+    </div>
   </div>
-  
 </div>
+
+

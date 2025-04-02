@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './components/contenedor/inicio/inicio.component';
 import { ErrorComponent } from './components/contenedor/error/error.component';
 import { FooterComponent } from './components/contenedor/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './components/contenedor/footer/footer.component
     // ToastrModule.forRoot() // ToastrModule added
     BsDatepickerModule.forRoot(),
     ModalModule,
+    BrowserAnimationsModule
 
 
   ],
