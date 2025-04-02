@@ -18,8 +18,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-
-
+.imagenesUi:hover {
+  cursor: pointer;
+  transform: scale(1.23);
+  transition: all 0.1s ease-in-out;
+}
 
 .cursor {
   display: inline-block;
