@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { ButtonModule } from 'primeng/button';
+
 
 @Component({
   selector: 'app-inicio',
   standalone: false,
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css',
+
+
+  
   animations: [
     trigger('fadeInAnimation', [
       state('void', style({

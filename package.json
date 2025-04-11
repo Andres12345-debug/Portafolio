@@ -18,6 +18,7 @@
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@primeng/themes": "^19.0.10",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
@@ -25,6 +26,8 @@
     "ngx-bootstrap": "^19.0.2",
     "ngx-pagination": "^6.0.3",
     "ngx-toastr": "^19.0.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^19.0.10",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
