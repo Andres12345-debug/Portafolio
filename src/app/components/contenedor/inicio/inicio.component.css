@@ -3,36 +3,31 @@
   background-attachment: fixed;
   background-size: cover;
 }
-
 .redondoFoto {
-  box-shadow: 0 10px 10px rgba(76, 35, 147, 0.43),
-    0 10px 10px rgba(124, 124, 124, 0.786);
+  box-shadow: 0 2px 2px rgba(76, 35, 147, 0.43),
+    0 2px 2px rgba(124, 124, 124, 0.786);
   background-color: #0000002c;
-  
 }
 .redondoFoto:hover {
   cursor: pointer;
-  box-shadow: 0 10px 10px rgba(255, 255, 255, 0.43),
-    0 10px 10px rgba(152, 143, 143, 0.786);
+  box-shadow: 0 2px 2px rgba(240, 240, 240, 0.753),
+    0 2px 2px rgba(152, 143, 143, 0.786);
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
-
 .imagenesUi:hover {
   cursor: pointer;
   transform: scale(1.23);
   transition: all 0.1s ease-in-out;
 }
-
-.cardHover:hover{
+.cardHover:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: all 0.1s ease-in-out;    
-  box-shadow: 0 0px 1px rgba(76, 35, 147, 0.43),
-    0 1px 10px  rgba(124, 124, 124, 0.786);
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  border: 1px solid #ffffff36; /* Borde con color */
+  border-radius: 15px; /* Esquinas redondeadas */
 }
-
-
 .cursor {
   display: inline-block;
   width: 3px;
@@ -50,33 +45,31 @@
     opacity: 0;
   }
 }
-
-
-
 .image-container {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  
-  .primary-image, .secondary-image {
+
+  .primary-image,
+  .secondary-image {
     width: 100%;
     height: auto;
     transition: opacity 0.3s ease;
   }
-  
+
   .secondary-image {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
-  
+
   &:hover {
     .primary-image {
       opacity: 0;
     }
-    
+
     .secondary-image {
       opacity: 1;
     }

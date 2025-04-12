@@ -8,7 +8,7 @@
   font-family: "Fira Code", "Consolas", "Courier New", monospace;
   font-size: 2.5rem;
   color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
+  text-shadow: 0 0 10px  rgba(240, 240, 240, 0.753);
   text-align: center;
 }
 .textosNegrllas{
@@ -16,5 +16,4 @@
     font-family: "Fira Code", "Consolas", "Courier New", monospace;
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.696);
-
 }
