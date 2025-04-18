@@ -18,9 +18,10 @@ ng new Portafolio --standalone=false
 npm i bootstrap
 npm install @fortawesome/fontawesome-free
 npm i ngx-bootstrap
+npm install bootstrap bootstrap-icons aos
+
 npm i ngx-toastr
 npm install ngx-pagination --save
-npm install bootstrap bootstrap-icons aos
 npm install aos --save
 npm i ngx
 
@@ -28,10 +29,6 @@ npm i ngx
 //libreria para Componentes bonitos
 npm install primeng primeicons
 npm install primeng
-
-
-
-
 
 
 
@@ -101,77 +98,67 @@ ng g c components/casa/actualizarCasa --skip-tests
 
 
 
-      TALLER SERVICIOS
+                    TALLER SERVICIOS
 
-      app MODULE
+                    app MODULE
 
-      import {BsModalService, ModalModule} from "ngx-bootstrap/modal";
-      import {ToastrModule} from "ngx-toastr";
-      import { FormsModule } from '@angular/forms';
-      import { NgxPaginationModule } from 'ngx-pagination';
-
-
-      ModalModule,
-      ToastrModule.forRoot(),
-      FormsModule,
-      NgxPaginationModule
+                    import {BsModalService, ModalModule} from "ngx-bootstrap/modal";
+                    import {ToastrModule} from "ngx-toastr";
+                    import { FormsModule } from '@angular/forms';
+                    import { NgxPaginationModule } from 'ngx-pagination';
 
 
-
-      ng g class models/Ciudad --skip-tests   
-      ng g class models/Ciudad --skip-tests
-      ng g class models/Region --skip-tests
+                    ModalModule,
+                    ToastrModule.forRoot(),
+                    FormsModule,
+                    NgxPaginationModule
 
 
 
-      ng g c components/colombia/departamento --skip-tests
-      ng g c components/colombia/detalle --skip-tests
-      ng g c components/colombia/regiones --skip-tests
-      
-          14.generacion domino 
-
-      ******************************************
-      ng g enum utilities/dominos/urls 
-      ***************************************************
-      15.creacion de los servico
-      ng g s servicios/api/colombia --skip-tests
-
-      OBSERVADORES
-      ng g enum utilities/observadores/tipoAny 
-
-      Spinner
-      ng g c utilities/plantilla/spiner --skip-tests
-
-            
-      #**********************************#
-      ng g c components/contenedor/cabecera --skip-tests
-      ng g c components/contenedor/inicio --skip-tests
-      ng g c components/contenedor/error --skip-tests
-      ng g c components/contenedor/contacto --skip-tests
-      ng g c components/contenedor/acerca-de --skip-tests
+                    ng g class models/Ciudad --skip-tests   
+                    ng g class models/Ciudad --skip-tests
+                    ng g class models/Region --skip-tests
 
 
 
-    1.INICIAMOS POR LOS URLS
+                    ng g c components/colombia/departamento --skip-tests
+                    ng g c components/colombia/detalle --skip-tests
+                    ng g c components/colombia/regiones --skip-tests
+                    
+                        14.generacion domino 
+
+                    ******************************************
+                    ng g enum utilities/dominos/urls 
+                    ***************************************************
+                    15.creacion de los servico
+                    ng g s servicios/api/colombia --skip-tests
+
+                    OBSERVADORES
+                    ng g enum utilities/observadores/tipoAny 
+
+                    Spinner
+                    ng g c utilities/plantilla/spiner --skip-tests
+
+                          
+                    #**********************************#
+                    ng g c components/contenedor/cabecera --skip-tests
+                    ng g c components/contenedor/inicio --skip-tests
+                    ng g c components/contenedor/error --skip-tests
+                    ng g c components/contenedor/contacto --skip-tests
+                    ng g c components/contenedor/acerca-de --skip-tests
 
 
-    2.PASAMOS A COLOMBIA.SERVICE
+
+                  1.INICIAMOS POR LOS URLS
 
 
-    3.PASAMOS A LOS MODELOS QUE SON LOS QUE NOS TRAEN LAS Variables
-
-    4.PASAMOS A LOS OBSERVABLE
-    
+                  2.PASAMOS A COLOMBIA.SERVICE
 
 
+                  3.PASAMOS A LOS MODELOS QUE SON LOS QUE NOS TRAEN LAS Variables
 
-
-
-
-
-
-
-
+                  4.PASAMOS A LOS OBSERVABLE
+                  
 
 *********************************************
 8. Contenido plantilla componente cabecera (cabecera, component)
@@ -256,6 +243,7 @@ import {defineLocale} from 'ngx-bootstrap/chronos'
     ModalModule,
     FormsModule
 #**********************************#
+
 ROUTER MODULE
 
         const routes: Routes = [
